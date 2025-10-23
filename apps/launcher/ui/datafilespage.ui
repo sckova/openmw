@@ -25,7 +25,79 @@
       </attribute>
       <layout class="QGridLayout" name="dataTabLayout">
        <item row="0" column="0">
-        <widget class="QWidget" name="contentSelectorWidget" native="true"/>
+        <widget class="QWidget" name="contentSelectorWidget" native="true">
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="dataButtons">
+         <item>
+          <widget class="QPushButton" name="dataToggleButton">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>33</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Toggle the content files you have currently selected as content files</string>
+           </property>
+           <property name="text">
+            <string>Toggle
+Selected</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="dataToggleGroundcoverButton">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>33</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Toggle the content files you have currently selected as groundcover</string>
+           </property>
+           <property name="text">
+            <string>Toggle
+Groundcover</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="dataCopyPathButton">
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>33</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Copy the paths you have currently selected to clipboard</string>
+           </property>
+           <property name="text">
+            <string>Copy Path(s)
+To Clipboard</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="contentButtonsSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="dataNoteLabel">
@@ -74,7 +146,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Scan directories for likely data directories and append them at the end of the list.</string>
+            <string>Scan directories for likely data directories and append them at the end of the list</string>
            </property>
            <property name="text">
             <string>Append</string>
@@ -282,7 +354,7 @@
             <enum>Qt::TabFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Generate navigation mesh cache for all content. Will be used by the engine to make cell loading faster.</string>
+            <string>Generate navigation mesh cache for all content. Will be used by the engine to make cell loading faster</string>
            </property>
            <property name="text">
             <string>Update</string>
@@ -305,7 +377,7 @@
             <bool>false</bool>
            </property>
            <property name="toolTip">
-            <string>Cancel navigation mesh generation. Already processed data will be saved.</string>
+            <string>Cancel navigation mesh generation. Already processed data will be saved</string>
            </property>
            <property name="text">
             <string>Cancel</string>
