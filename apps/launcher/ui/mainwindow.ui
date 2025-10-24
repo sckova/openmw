@@ -31,7 +31,7 @@
     <item>
      <widget class="Line" name="line">
       <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+       <enum>Qt::Orientation::Horizontal</enum>
       </property>
      </widget>
     </item>
@@ -47,7 +47,7 @@
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -60,7 +60,7 @@
       <item>
        <widget class="QDialogButtonBox" name="buttonBox">
         <property name="standardButtons">
-         <set>QDialogButtonBox::Close|QDialogButtonBox::Help|QDialogButtonBox::Ok</set>
+         <set>QDialogButtonBox::StandardButton::Close|QDialogButtonBox::StandardButton::Help|QDialogButtonBox::StandardButton::Ok</set>
         </property>
        </widget>
       </item>
@@ -73,7 +73,7 @@
     <string>toolBar</string>
    </property>
    <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
    </property>
    <property name="movable">
     <bool>false</bool>
@@ -85,7 +85,7 @@
     </size>
    </property>
    <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextUnderIcon</enum>
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
    </property>
    <property name="floatable">
     <bool>false</bool>
@@ -106,8 +106,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="../../../files/launcher/launcher.qrc">
-     <normaloff>:/images/openmw-plugin.png</normaloff>:/images/openmw-plugin.png</iconset>
+    <iconset theme="folder"/>
    </property>
    <property name="text">
     <string>Data Files</string>
@@ -127,8 +126,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="../../../files/launcher/launcher.qrc">
-     <normaloff>:/images/preferences-video.png</normaloff>:/images/preferences-video.png</iconset>
+    <iconset theme="video-display"/>
    </property>
    <property name="text">
     <string>Display</string>
@@ -142,8 +140,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="../../../files/launcher/launcher.qrc">
-     <normaloff>:/images/preferences.png</normaloff>:/images/preferences.png</iconset>
+    <iconset theme="preferences-system"/>
    </property>
    <property name="text">
     <string>Settings</string>
@@ -157,8 +154,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="../../../files/launcher/launcher.qrc">
-     <normaloff>:/images/preferences-advanced.png</normaloff>:/images/preferences-advanced.png</iconset>
+    <iconset theme="drive-optical"/>
    </property>
    <property name="text">
     <string>Import</string>
